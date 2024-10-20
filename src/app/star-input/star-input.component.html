@@ -1,0 +1,7 @@
+<div>
+  <label for="starNumber">Enter a number:</label>
+  <input type="number" id="starNumber" (input)="onInputChange($event)" placeholder="Enter a number" min="0">
+  <div class="star-container">
+    <span *ngFor="let star of getStars()" class="star">⭐</span>
+  </div>
+</div>
